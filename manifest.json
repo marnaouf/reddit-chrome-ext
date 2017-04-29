@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Reddit on Demand",
+  "description": "This extension informs you if the page you're currently on has
+   been shared and discussed on reddit and allows you to view the reddit comment
+   thread at the press of a button.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Reddit On Demand"
+  },
+
+  "background": {
+   "scripts": ["main.js"],
+   "persistent": false
+ },
+
+  "permissions": [
+    "tabs",
+    "https://reddit.com/"
+  ]
+}
